@@ -77,11 +77,30 @@ def __init__(self, value):        def __init__(self, value):
 Singly linked list that are connected to the next list in some way
 To get to the 2nd or 3rd node you would have to move each item to get to it
 
-head       tail
+head       tail                                 head -> None   None <- tail
     |     |
     v     v
     | 20 |  | -> None
 
 Adding a new node instead of allocating different points in memory when appending or deleting a list.
+```
+n1 = Node(1)
+n2 = Node(2)
+n3 = Node(3)
+n4 = Node(4)
+n5 = Node(5)
 
+n1.next_node = n2
+n2.next_node = n3
+n3.next_node = n5
+n5.next_node = n4
 
+1
+2
+3
+4
+5
+
+n4.next_node = n5
+n5.next_node = n4
+```
