@@ -104,3 +104,26 @@ n5.next_node = n4
 n4.next_node = n5
 n5.next_node = n4
 ```
+#Pros and Cons of Linked Lists
+
+Unlike arrays, linked lists do not store elements contiguoulsy
+
+    * Pro: Easier to insert into and delet from the middle of a linked list compared to an array (why is this the case?)
+
+    * Con: Linked lists are not as cache-friendly since caches are typically optimized for contiguous memory accesses.
+
+Linked lists do not need to be allocated with static amount of memory up-front.
+
+    * Pro: We can keep adding elements to linked lists as much as we want, unlike arrays with the static amount of allocated memory
+
+
+# Queue
+
+![LIFO](queue.png)
+Last in first out for linked list
+
+whereas, for queue it's
+![FIFO](FIFO.png)
+
+# Stack
+
