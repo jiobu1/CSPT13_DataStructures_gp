@@ -119,7 +119,7 @@ Linked lists do not need to be allocated with static amount of memory up-front.
 
 # Queue
 
-![LIFO](queue.png)
+![LIFO](LIFO.png)
 Last in first out for linked list
 
 whereas, for queue it's
