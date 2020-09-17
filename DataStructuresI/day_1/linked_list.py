@@ -125,5 +125,5 @@ class LinkedList:
             # set self.head to old head's next
             self.head = self.head.get_next()
             # return the value
-            return value 
+            return value
 

@@ -23,7 +23,7 @@ Constant time O(1)
 arr[2] -> 16
 scales with no real change to the operation
 
-![big O complexity](bigOcomplexity.png)
+![big O complexity](images/bigOcomplexity.png)
 
 Have to think about how this would scale
 i.e. nested to for loops or even break into a few constant or linear time complexities
@@ -119,11 +119,11 @@ Linked lists do not need to be allocated with static amount of memory up-front.
 
 # Queue
 
-![LIFO](LIFO.png)
+![LIFO](images/LIFO.png)
 Last in first out for linked list
 
 whereas, for queue it's
-![FIFO](FIFO.png)
+![FIFO](images/FIFO.png)
 
 # Stack
 
