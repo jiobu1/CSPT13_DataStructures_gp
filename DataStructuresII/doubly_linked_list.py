@@ -29,6 +29,8 @@ class DoublyLinkedList:
     def add_to_head(self, value):
         # wrap the value in a new Node
         new_node = Node(value)
+        # increment the length
+        self.length += 1
         # check if the linked list is empty
         if self.head is None and self.tail is None:
             # set the head and tail to the new node
