@@ -40,7 +40,6 @@ class StackA:
         return self.storage[-1]
 
 
-
 from linked_list import LinkedList
 
 # Stack implementation using a Linked List
@@ -63,4 +62,4 @@ class StackL:
         return self.storage.remove_head()
 
     def peek(self):
-        return self.storage[-1]
+        return self.storage.head.get_value()
