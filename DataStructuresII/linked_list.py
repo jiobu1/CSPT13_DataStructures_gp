@@ -7,7 +7,7 @@ class Node:
         self.value = value
         # ref to the next node in the chain
         self.next_node = next_node
-    
+
 
     def get_value(self):
         """
@@ -27,13 +27,13 @@ class Node:
         """
         self.next_node = new_next
 
-    
+
 
 
 # now lets think of how we can make nodes interact in a way that consolidates their pieces together
 
 # lets make a LinkedList class
-# think of the idea of having a head and a tail like a snake 
+# think of the idea of having a head and a tail like a snake
 # where the snake can grow based upon having more links in it
 
 class LinkedList:
@@ -95,7 +95,7 @@ class LinkedList:
             self.tail.set_next(None)
             # return Value
             return value
-            
+
     def add_to_head(self, value):
             # wrap the input value in a node
             new_node = Node(value)
@@ -104,11 +104,11 @@ class LinkedList:
                 # if the list is initially empty, set both head and tail to the new node
                 self.head = new_node
                 self.tail = new_node
-            # we have a non-empty list, add the new node to the head 
+            # we have a non-empty list, add the new node to the head
             else:
                 # set the new node's `next` to refer to the current head
                 new_node.set_next(self.head)
-                # set the list's head reference to the new node 
+                # set the list's head reference to the new node
                 self.head = new_node
 
     def remove_head(self):
@@ -131,7 +131,7 @@ class LinkedList:
             # set self.head to old head's next
             self.head = self.head.get_next()
             # return the value
-            return value 
+            return value
 
 
 
