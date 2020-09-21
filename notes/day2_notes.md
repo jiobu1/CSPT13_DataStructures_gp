@@ -1,4 +1,14 @@
 ## Review
+https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf
+https://visualgo.net/en/list?slide=6
+
+# Time Complexity
+Refers to Big O
+
+# Space Complexity
+size of memory used
+
+
 Array
 IDx
    0   1   2   3   4 --> 5
@@ -12,7 +22,7 @@ O(n)
 To delete O(n)
 To insert O(n)
 
-Linked List 
+Linked List
  H          T
  ^          ^
  |          |
