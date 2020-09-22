@@ -8,6 +8,12 @@ class ListNode:
         self.value = value
         self.next = next
 
+    def delete(self):
+        if self.prev:
+            self.prev.next = self.next
+        if self.next:
+            self.next.prev = self.prev
+
 """
 Our doubly-linked list class. It holds references to
 the list's head and tail nodes.
@@ -92,11 +98,7 @@ class DoublyLinkedList:
         if node is self.tail:
             self.remove_from_tail()
         else:
-            if node.prev:
-                node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
-
+            node.delete()
             self.length -= 1
         self.add_to_head(value)
 
@@ -111,11 +113,7 @@ class DoublyLinkedList:
         if node is self.head:
             self.remove_from_head()
         else:
-            if node.prev:
-                node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
-
+            node.delete()
             self.length -= 1
         self.add_to_tail(value)
 
@@ -124,28 +122,23 @@ class DoublyLinkedList:
     order of the other elements of the List.
     """
     def delete(self, node):
+        # checks for empty list
         if not self.head and not self.tail:
             return
+        # checks if there is only one list
         if self.head is self.tail:
             self.head = None
             self.tail = None
+        # check if head is to be removed
         elif self.head is node:
             self.head = node.next
-            if node.prev:
-                node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
+            node.delete()
+        # check if tail is to be removed
         elif self.tail is node:
             self.tail = node.prev
-            if node.prev:
-                node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
+            node.delete()
         else:
-            if node.prev:
-                node.prev.next = node.next
-            if node.next:
-                node.next.prev = node.prev
+            node.delete()
         self.length -= 1
 
     """
