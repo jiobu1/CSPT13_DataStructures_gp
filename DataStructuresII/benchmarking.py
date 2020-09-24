@@ -1,4 +1,4 @@
-import time 
+import time
 from linked_list import LinkedList
 
 n = 10000
