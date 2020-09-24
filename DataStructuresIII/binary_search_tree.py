@@ -10,8 +10,8 @@ This part of the project comprises two days:
 """
 class BSTNode:
     """
-    The left subtree of a node contains only nodes with values lesser than the node's values
-    The right subtree of a node contains only nodes with values greater or equal to than the node's values
+    The left subtree of a node contains only nodes with values lesser than the node’s value.
+    The right subtree of a node contains only nodes with values greater than or equal to the node’s value.
     The left and right subtree each must also be a binary search tree.
     """
     def __init__(self, value):
@@ -22,30 +22,30 @@ class BSTNode:
     # Insert the given value into the tree
     def insert(self, value):
         # check if the new nodes value is less than the current nodes value
-            # if there is no left child already there
+            # if there is no left child already here
                 # add the new node to the left
                 # create a BSTNode and encapsulate the value in it then set it to the left
             # otherwise call insert on the left node
-        # otherwise (the new nodes value is greater than or equal to the current nodes value)
-            # if there is no right child already there
+        # otherwise (the new nodes value is greaterthan or equal to the current node value)
+            # if there is no right child already here
                 # add the new node to the right
                 # create a BSTNode and encapsulate the value in it then set it to the right
-            # otherwise call insert on the left node
+            # otherwise call insert on the right node
         pass
-
 
     # Return True if the tree contains the value
     # False if it does not
     def contains(self, target):
         # if the value of the current node matches the target
             # return True
+
         # check if the target is less than the current nodes value
-            # if there is no left child already there
+            # if there is no left child already here
                 # return False
             # otherwise
                 # return a call of contains on the left child passing in the target value
-        # otherwise (the target is greater thanthe current nodes value)
-            # if there is no right child already there
+        # otherwise (the target is greater than the current nodes value)
+            # if there is no right child already here
                 # return False
             # otherwise
                 # return a call of contains on the right child passing in the target value
@@ -56,29 +56,29 @@ class BSTNode:
         # check for an empty tree
             # return None
 
-        # recursive approach (use more memory)
+        # ----------------------------------------------
+        # recursive approach
         # check if there is no node to the right
             # return the nodes value
         # return a call to get max on the right child
-        # -------------------------------------------
-        # iterative approach (more lines of code)
-        # doubly linked list max function
+        # -----------------------------------------------
 
-        # initialize max value
+        # iterative aproach
 
-        #  get reference to the current node
+        # initialise the max value
 
-        # lopp while there is still a current node
+        # get a ref to the current node
+
+        # loop while there is still a current node
             # if the current value is greater than the max value, update the max value
             # move on to the next right node
 
-        # return max value
+        # return the max value
         pass
 
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
-        # call back function
-        # call the function - passing the current node's value
+        # call the function passing in the current nodes value
 
         # if there is a node to the left
             # call the function on the left value
@@ -137,4 +137,5 @@ bst.pre_order_dft()
 print("in order")
 # bst.in_order_dft()
 print("post order")
-bst.post_order_dft() 
+bst.post_order_dft()
+
