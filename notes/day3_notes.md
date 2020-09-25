@@ -1,9 +1,10 @@
 # Binary Search Tree
 - https://www.geeksforgeeks.org/binary-search-tree-data-structure/
+- runestone.academy
 
 ![binary_search_tree](images/binary_search_tree.png)
 
-Order 
+Order
 - ![Graphs](images/graphs.png)
 - ![Trees](images/trees.png)
 - ![Binary Tree](images/binarytree.png)
@@ -16,6 +17,7 @@ is a node based binary tree data structure whcih has the following properties:
 - The left and right subtree each must also be a binary search tree.
 
 https://www.cs.usfca.edu/~galles/visualization/BST.html
+visualgo.net/en/bst
 
 Insert
 - check if the new nodes value is less than the current nodes value
@@ -26,3 +28,10 @@ Insert
 - if there is no right child already there
 - add the new node to the right
 - otherwise call insert on the left node
+
+# Delete
+Node with 0 children
+- easily delete
+
+Node with 1 child
+- must find a value to replace deleted node while keeping the rules of the binary search tree

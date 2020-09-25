@@ -21,60 +21,40 @@ class BSTNode:
 
     # Insert the given value into the tree
     def insert(self, value):
-        # check if the new nodes value is less than the current nodes value
-            # if there is no left child already here
-                # add the new node to the left
-                # create a BSTNode and encapsulate the value in it then set it to the left
-            # otherwise call insert on the left node
-        # otherwise (the new nodes value is greaterthan or equal to the current node value)
-            # if there is no right child already here
-                # add the new node to the right
-                # create a BSTNode and encapsulate the value in it then set it to the right
-            # otherwise call insert on the right node
-        pass
+        # RECURSIVE
+        # if value < root, go left
+            # add here... left child = BSTNode(value)
+        #else
+            self.left.insert(value) # recursive call
+        # if value >= root, go right (dupes go to the right)
+            # add here
+        # else
+            self.right.insert(value) # recursive call
+
+        # ITERATIVE
+        # while not at bottom level of tree
+            # if value < root, go to left
+                # if left child is None
+                    # add here
+                    # exit loop
+            # if value >= root, go right(dupes go to the right)
+                # if right child is None
+                    # add here
+                    # exit loop
 
     # Return True if the tree contains the value
     # False if it does not
     def contains(self, target):
-        # if the value of the current node matches the target
-            # return True
-
-        # check if the target is less than the current nodes value
-            # if there is no left child already here
-                # return False
-            # otherwise
-                # return a call of contains on the left child passing in the target value
-        # otherwise (the target is greater than the current nodes value)
-            # if there is no right child already here
-                # return False
-            # otherwise
-                # return a call of contains on the right child passing in the target value
-        pass
+        # check is self.value is target
+            # if yes, return True
+            # if no
+                # go left
+                # go right
 
     # Return the maximum value found in the tree
     def get_max(self):
-        # check for an empty tree
-            # return None
-
-        # ----------------------------------------------
-        # recursive approach
-        # check if there is no node to the right
-            # return the nodes value
-        # return a call to get max on the right child
-        # -----------------------------------------------
-
-        # iterative aproach
-
-        # initialise the max value
-
-        # get a ref to the current node
-
-        # loop while there is still a current node
-            # if the current value is greater than the max value, update the max value
-            # move on to the next right node
-
-        # return the max value
-        pass
+        # go right unitl you cannot anymore
+        # return value at far right
 
     # Call the function `fn` on the value of each node
     def for_each(self, fn):
@@ -85,7 +65,6 @@ class BSTNode:
 
         # if there is a node to the right
             # call the function on the right node
-        pass
 
     # Part 2 -----------------------
 
