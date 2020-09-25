@@ -1,7 +1,2 @@
-Traversal vs. Search
-
-Breadth-first traversal
-
-Wikipedia (look for Breadth-first Search)
-
-Breadth is the width
+Breadth First Search vs Depth First Search
+![BFS vs DFS](images/dfs_bfs.gif)

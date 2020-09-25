@@ -3,6 +3,12 @@
 
 ![binary_search_tree](images/binary_search_tree.png)
 
+Order 
+- ![Graphs](images/graphs.png)
+- ![Trees](images/trees.png)
+- ![Binary Tree](images/binarytree.png)
+- ![Binary Search Tree](images/bst.png)
+
 Binary Search Tree \
 is a node based binary tree data structure whcih has the following properties:
 - The left subtree of a node contains only nodes with keys lesser than the node's key
